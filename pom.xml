@@ -19,6 +19,8 @@
   <properties>
     <renjin.version>0.8.1996</renjin.version>
   </properties>
+  
+  <!-- Packages required by this package -->
   <dependencies>
     <dependency>
       <groupId>org.renjin</groupId>
@@ -31,7 +33,27 @@
       <version>${renjin.version}</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.renjin</groupId>
+      <artifactId>utils</artifactId>
+      <version>${renjin.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.renjin</groupId>
+      <artifactId>graphics</artifactId>
+      <version>${renjin.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.renjin</groupId>
+      <artifactId>grDevices</artifactId>
+      <version>${renjin.version}</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
+  
+  <!-- Define repositories where package dependencies can be found -->
   <repositories>
     <repository>
       <id>bedatadriven-public</id>
@@ -44,6 +66,8 @@
       <url>http://nexus.bedatadriven.com/content/groups/public/</url>
     </pluginRepository>
   </pluginRepositories>
+  
+  <!-- Define where this build should be deployed to -->
   <distributionManagement>
     <repository>
       <id>renjin-packages</id>
@@ -51,6 +75,7 @@
       <url>http://nexus.bedatadriven.com/content/repositories/renjin-packages</url>
     </repository>
   </distributionManagement>
+  
   <build>
     <sourceDirectory>${basedir}/renjin</sourceDirectory>
     <plugins>
@@ -80,6 +105,9 @@
                <defaultPackages>
                  <package>stats</package>
                  <package>datasets</package>
+                 <package>utils</package>
+                 <package>graphics</package>
+                 <package>grDevices</package>
                  <package>plyr</package>
                </defaultPackages>
             </configuration>
