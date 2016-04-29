@@ -15,6 +15,8 @@ import java.util.List;
  */
 public class plyr {
 
+  
+  
   //' Split indices.
 //'
 //' An optimised version of split for the special case of splitting row
@@ -52,6 +54,10 @@ public class plyr {
     }
     
     return list.build();
+  }
+
+  public static ListVector plyr_split_indices(IntVector group, double n) {
+    return plyr_split_indices(group, (int)n);
   }
 
   public static SEXP loop_apply_(@Current Context context, int n, Function f, Environment rho) {
