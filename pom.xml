@@ -35,12 +35,6 @@
     </dependency>
     <dependency>
       <groupId>org.renjin</groupId>
-      <artifactId>utils</artifactId>
-      <version>${renjin.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.renjin</groupId>
       <artifactId>graphics</artifactId>
       <version>${renjin.version}</version>
       <scope>test</scope>
