@@ -10,5 +10,7 @@
 #' @useDynLib plyr loop_apply_
 #' @keywords internal manip
 loop_apply <- function(n, f, env = parent.frame()) {
-  .Call(loop_apply_, as.integer(n), f, env)
+  stopifnot(is.function(f))
+  
+  eval(lapply(seq_len(n), f), envir = env)
 }

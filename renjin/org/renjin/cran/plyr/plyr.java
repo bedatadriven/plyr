@@ -60,13 +60,4 @@ public class plyr {
     return plyr_split_indices(group, (int)n);
   }
 
-  public static SEXP loop_apply_(@Current Context context, int n, Function f, Environment rho) {
-    ListVector.Builder results = new ListVector.Builder(0, n);
-
-    for(int i = 0; i < n; ++i) {
-      results.add(context.evaluate(FunctionCall.newCall(f, IntVector.valueOf(i)), rho));
-    }
-    
-    return results.build();
-  }
 }
