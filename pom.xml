@@ -33,18 +33,6 @@
       <version>${renjin.version}</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
-      <groupId>org.renjin</groupId>
-      <artifactId>graphics</artifactId>
-      <version>${renjin.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.renjin</groupId>
-      <artifactId>grDevices</artifactId>
-      <version>${renjin.version}</version>
-      <scope>test</scope>
-    </dependency>
   </dependencies>
   
   <!-- Define repositories where package dependencies can be found -->
