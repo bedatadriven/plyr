@@ -5,4 +5,4 @@ for Renjin.
 
 Renjin's tool chain can now compile plyr directly, so this fork is no longer needed.
 
-See: http://packages.renjin.org/package/org.renjin.cran/plyr/1.8.4
+See: http://packages.renjin.org/package/org.renjin.cran/plyr
